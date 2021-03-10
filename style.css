@@ -432,8 +432,10 @@ section .title::after{
         width: 100%;
     }
     .skills .skills-content .skills-container{
-        margin: 50px 0 20px 0;
-        padding: 0 30px 0 30px;
+        padding: 0 20px 0 20px;
+    }
+    .skills .skills-content .column-skills-top p{
+       font-size: 15px;
     }
     
 
@@ -445,5 +447,8 @@ section .title::after{
     }
     .home .home-content .text-3{
         font-size: 27px;
+    }
+    .skills .skills-content .skills-container{
+        padding: 0 8px 0 8px;
     }
 }
