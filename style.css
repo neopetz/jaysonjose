@@ -171,7 +171,7 @@ section .title::after{
 
 /*para sa about*/
 
-.about, .project, .skills{
+.about, .project, .skills, .contact, .foot{
     
     font-family: 'Poppins',sans-serif;
     
@@ -315,6 +315,24 @@ section .title::after{
     transform: scale(1.2);   
 }
 
+/*footert*/
+.foot{
+    color: white;
+    background: #111 ;
+
+}
+.foot .foot-content{
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: space-around;  
+}
+.foot .foot-content .colunm-foot{
+    padding: 20px;
+}
+.foot .foot-content .colunm-foot h1{
+    padding-bottom: 20px;
+    color: crimson;
+}
 
 
 
@@ -342,7 +360,7 @@ section .title::after{
         padding: 0 50px;
     }
     .project .project-content .card {
-        width: calc(50% - 5px);
+        width: calc(40% - 5px);
         margin-bottom: 20px;
     }
 
@@ -417,6 +435,11 @@ section .title::after{
     .skills .skills-content .column-skills-top p{
        font-size: 15px;
     }
+    .foot .foot-content{
+        flex-direction: column;
+        font-size: 18px;
+
+    }
 }
 
 @media (max-width: 690px){
@@ -437,7 +460,14 @@ section .title::after{
     .project .project-content .card {
         width: 100%;
     }
+    .foot .foot-content{
+        flex-direction: column;
+        font-size: 18px;
 
+    }
+    .foot .foot-content .colunm-foot{
+        width: 100%;
+    }
     
 
 }
@@ -452,5 +482,12 @@ section .title::after{
     .skills .skills-content .skills-container{
         padding: 0 10px 0 10px;
     }
+    .foot .foot-content{
+        flex-direction: column;
+        font-size: 15px;
 
+    }
+ .foot .foot-content .colunm-foot{
+    width: 100%;
+    }
 }
