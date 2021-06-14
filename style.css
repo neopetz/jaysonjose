@@ -9,6 +9,18 @@
 body,html{
     scroll-behavior: smooth;
 }
+a:link{
+    color: white;
+}
+a:visited{
+    color: white;
+}
+a:active{
+    color: white;
+}
+a:hover{
+    color:crimson;
+}
 
 .max-width{
     max-width: 1300px;
@@ -252,14 +264,21 @@ section .title::after{
 .project .project-content .card:hover{
     background: crimson;
 }
+.project .project-content .card .box:hover .info-btn a{
+    background: white;
+    color: crimson;
+}
 .project .project-content .card .box{
     transition: all 0.3s ease;
 }
 .project .project-content .card:hover .box{
     transform: scale(1.05);
 }
+.project .project-content .card .box .info-btn a:hover{
+    background: rgb(212, 208, 208);
+}
 .project .project-content .card i{
-    font-size: 40px;
+    font-size: 30px;
     color:  crimson;
     transition: color 0.3s ease;
 }
@@ -267,9 +286,26 @@ section .title::after{
     color: white;
 }
 .project .project-content .card .text{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+}
+.project .project-content .card .box .info-btn{
+    display: flex;
+}
+.project .project-content .card .box .info-btn a{
+    display: inline-block;
+    background: crimson;
+    color: white;
+    font-size: 15px;
+    padding: 5px 5px;
+    font-weight: 500;
+    width: 50%;
+    margin-right: 10px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px crimson;
+    transition: all 0.3 ease;
 }
 
 /*skills*/
@@ -327,6 +363,7 @@ section .title::after{
     justify-content: space-around;  
 }
 .foot .foot-content .colunm-foot{
+    color:white;
     padding: 20px;
 }
 .foot .foot-content .colunm-foot h1{
