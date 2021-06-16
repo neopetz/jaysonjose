@@ -398,6 +398,7 @@ section .title::after{
 
 .modal-content .col-top .row-image{
   display: flex;
+  justify-content: space-evenly;
 }
 .modal-content .col-top .row-image img{
     padding: 5px;
@@ -566,13 +567,19 @@ section .title::after{
     .foot .foot-content .colunm-foot{
     width: 100%;
     }
+    .modal h1{
+        font-size: 15px;
+        text-align: center;
+        margin: 5px 5px;
+    }
     .modal-content .col-top img{
         height: 25vh;
         width: 100%;
     }
     .modal-content .col-bottom p{
-        font-size: 18px;
+        font-size: 13px;
         text-align: justify;
-        padding: 10px 0 10px 0;
+        padding: 5px 0 5px 0;
     }
+
 }
