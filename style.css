@@ -371,6 +371,37 @@ section .title::after{
     color: crimson;
 }
 
+/* Moodal*/
+.modal{
+    height: 70vh;
+    font-family: "Poppins",sans-serif;
+    font-size: 12px;
+}
+.modal h1{
+    text-align: center;
+    margin: 10px 10px;
+    padding: 10px;
+}
+.modal-content{
+    display: flex;
+    flex-direction: column;
+}
+.modal-content .col-top img{
+    height: 30vh;
+    width: 100%;
+}
+.modal-content .col-bottom p{
+    font-size: 18px;
+    text-align: justify;
+    padding: 20px 0 20px 0;
+}
+
+.modal-content .col-top .row-image{
+  display: flex;
+}
+.modal-content .col-top .row-image img{
+    padding: 5px;
+  }
 
 
 /*responsive*/
@@ -505,7 +536,15 @@ section .title::after{
     .foot .foot-content .colunm-foot{
         width: 100%;
     }
-    
+    .modal-content .col-top img{
+        height: 30vh;
+        width: 100%;
+    }
+    .modal-content .col-bottom p{
+        font-size: 18px;
+        text-align: justify;
+        padding: 10px 0 10px 0;
+    }
 
 }
 
@@ -524,7 +563,16 @@ section .title::after{
         font-size: 15px;
 
     }
- .foot .foot-content .colunm-foot{
+    .foot .foot-content .colunm-foot{
     width: 100%;
+    }
+    .modal-content .col-top img{
+        height: 25vh;
+        width: 100%;
+    }
+    .modal-content .col-bottom p{
+        font-size: 18px;
+        text-align: justify;
+        padding: 10px 0 10px 0;
     }
 }
